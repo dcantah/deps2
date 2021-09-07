@@ -3,9 +3,9 @@ package deps2
 import (
 	"fmt"
 
-	runtime "k8s.io/cri-api/pkg/apis/runtime/v1"
+	api "k8s.io/api/core/v1"
 )
 
 func Deps() {
-	fmt.Println(&runtime.AuthConfig{})
+	fmt.Println(api.StreamTypeError)
 }
